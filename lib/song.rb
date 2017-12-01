@@ -38,7 +38,7 @@ class Song
     self.find_by_name(song_name) || self.create_by_name(song_name)
   end
 
-  def self.alphabetical(song_name)
+  def self.alphabetical #why doesnt this method take in an argument? 
     self.all.sort_by{|s| s.name}
   end
 

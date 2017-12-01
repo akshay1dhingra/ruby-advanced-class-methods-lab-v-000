@@ -1,5 +1,7 @@
 require 'pry'
+
 class Song
+  
   attr_accessor :name, :artist_name
   @@all = []
 
@@ -46,10 +48,13 @@ class Song
     part = filename.split(" - ")
     artist_name = part[0]
     song_name = part[1].slice!".mp3".
-    
-  end
+binding.pry
+    song = self.new
+    song.name = song_name
 
   end
+
+
 
 
 end

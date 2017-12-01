@@ -38,12 +38,13 @@ class Song
     self.find_by_name(song_name) || self.create_by_name(song_name)
   end
 
-  def self.alphabetical #why doesnt this method take in an argument? is it because we are not adding anything to the list but are just sorting what we have? 
+  def self.alphabetical #why doesnt this method take in an argument? is it because we are not adding anything to the list but are just sorting what we have?
     self.all.sort_by{|s| s.name}
   end
 
   def self.new_from_filename(filename)
-    songs = filename.split(" - ")
+    song = filename.split(" - ")
+    artist_name = song[0]
 
   end
 

@@ -30,7 +30,7 @@ class Song
     song
   end
 
-  def find_by_name(son_name)
+  def find_by_name(song_name)
     binding.pry
   end
 
